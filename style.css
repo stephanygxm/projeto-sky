@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-infos {
+  background-color: #f1f2fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e3e4eb;
+  padding: 0% 10% 0% 10%;
+  
+}
+
+.a-infos {
+  display: flex;
+  align-items: center;
+}
+
+.logo-sky-header img {
+  width: 100px;
+  height: 70px;
+  padding-right: 15px;
+}
+
+.btn-access i {
+  font-size: 20px;
+  padding: 0px 10px 0px 10px;
+  color: #00000099;
+}
+
+#btn-play {
+  padding-left: 5em;
+}
+
+.a-infos a, .a-login a, .nav-options a {
+  text-decoration:none;
+  color: #00000099;
+  font-weight: 600;
+}
+ 
+.modal-login i {
+  font-size: 20px;
+  padding-right: 11px;
+}
+
+.modal-search i {
+  font-size: 20px;
+  padding-left: 23px;
+}
+
+.nav-options {
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.btn-option {
+  padding: 20px 0px; 
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.btn-option:hover {
+  color: #D81818;
+  border-bottom: 4px solid #D81818;
+}
+
+.nav-infos a:hover {
+  color: #D81818;
+}
+
+.a-infos i:hover {
+  opacity: 0.7;
+}
+
+#btn-play:hover {
+  opacity: 1;
+}
+
+footer {
+  margin: 32px 0px 0px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.a-icon {
+  font-size: 1.25em;
+  padding: 0px 10px 0px 10px;
+  color: #00000099;
+}
+
+.social-network, .info-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f2fa;
+  border-bottom: 2px solid #e3e4eb;
+  padding: 15px 10% 15px 10%;
+}
+
+.social-network {
+  border-top: 2px solid #e3e4eb;
+  align-items: center;
+}
+
+.info-mobile {
+  display: flex;
+  padding-top: 16px;
+}
+
+.mobile p {
+  max-width: 280px;
+}
+
+.img-sky-footer img {
+  width: 48px;
+}
+
+.img-mobile img {
+  width: 160px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.mobile {
+  padding-left: 20px;
+}
+
+.mobile p {
+  color: #00000099;
+  font-weight: 600;
+}
+
+.menu-info {
+  font-size: 14px;
+  margin: 0px 0px 10px 0px;
+  color: #00000099;
+  font-weight: 600;
+}
+
+.title-info {
+  padding: 16px 0px 13px 0px;
+  color: black;
+}
+
+.info-about {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.info-about-sky {
+  margin-top: 16px;
+  padding-left: 20px;
+}
+
+.footer-links {
+  padding: 15px 10% 15px 10%;
+}
+
+.menu-link {
+  border-left: 1px solid black;
+  padding: 0px 8px 0px 8px;
+}
+
+.menu-home {
+  padding-right: 5px;
+}
+
+.copyright {
+  border-top: 2px solid #e3e4eb;
+  background-color: #f1f2fa;
+  padding: 15px 10% 15px 10%;
+  font-size: 14px;
+  color: #00000099;
+}
+
+footer a:hover {
+  color: #D81818;
+}
+
+.title-info:hover {
+  color: black;
+}
+
+.display-mobile {
+  display: none;
+}
+.display-mobile2 {
+  display: none;
+}
+.display-mobile3 {
+  display: none;
+}
+
+.btn-hidden {
+  display: none;
+}
+
+.sidenav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f1f2fa;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  font-size: 35px;
+}
+
+.menu-hidden {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding-left: 25px;
+  line-height: 3.5;
+}
+
+.menu-hidden a {
+  text-decoration:none;
+  color: #00000099;
+  border-bottom: 2px solid #e3e4eb;
+}
+
+.menu-hidden i {
+  padding-right: 10px;
+  font-size: 18px;
+}
+
+/*Imagens vindas da api no corpo do documento*/
+
+#images-body-container {
+  padding-top: 30px;
+  text-align: center;
+}
+
+#images-body-container p {
+  text-align: left;
+  padding-left: 5%;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.images-body{
+  width: 170px;
+  margin: 8px;
+  border-radius: 5px;
+}
+
+.images-body:hover {
+  -webkit-transform: scale(1.1); 
+  -moz-transform: scale(1.1); 
+  -o-transform: scale(1.1); 
+  -ms-transform: scale(1.1); 
+  transform: scale(1.1); 
+  transition: 0.8s;
+}
+
+#carouselWithIndicators{
+  width: 100%;
+}
+
+#box-container-carousel{
+  width: 60%;
+  margin: auto;
+}
+
+@media (max-width: 1089px) {
+  .nav-infos {
+    padding: 0% 5% 0% 5%;
+  }
+  
+  .social-network, .info-footer, .footer-links, .copyright {
+    padding: 15px 5% 15px 5%;
+  }
+}
+
+@media (max-width: 927px) {
+  .footer-links {
+    line-height: 2.5;
+  }
+  
+  .info-mobile {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 815px) {
+
+  .info-footer {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .info-about, .info-about-sky {
+    padding-left: 0;
+  }
+  
+  .logo-sky-header img {
+    padding-right: 0px;
+    width: 80px;
+    height: 50px;
+  }
+  
+  .info-about {
+    border-bottom: 2px solid #e3e4eb;
+    padding-bottom: 10px;
+  }
+  
+  .img-mobile {
+    display: none;
+  }
+  
+  .mobile p {
+    padding-right: 10px;
+    color: #D81818;
+  }
+}
+
+/*Menu hamburguer e menu suspenso no footer*/
+
+@media (max-width: 675px) {
+  .btn-access, .a-login {
+    display: none;
+  }
+  
+  .btn-hidden {
+    display: block;
+  }
+
+  .icon {
+    display: block;
+    color: #00000099;
+    font-size: 30px;
+  }
+  
+  .display-large, .display-mobile .sub-itens a, .display-mobile input,
+  .display-large2, .display-mobile2 .sub-itens2 a, .display-mobile2 input,
+  .display-large3, .display-mobile3 .sub-itens3 a, .display-mobile3 input {
+    display: none;
+  }
+  
+  .display-mobile, .display-mobile2, .display-mobile3 {
+    display: flex;
+  }
+  
+  .display-mobile i, .display-mobile2 i, .display-mobile3 i {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  
+  .display-mobile input:checked + .sub-itens a,
+  .display-mobile2 input:checked + .sub-itens2 a,
+  .display-mobile3 input:checked + .sub-itens3 a {
+    display: block;
+  }
+  
+  a, i:hover  {
+    color: #00000099; 
+  }
+
+  #box-container-carousel{
+    width: 100%;
+  }
+}
+
+a:hover { 
+  text-decoration: none; 
+}
+
+#dropdown, #dropdown2, #dropdown3 {
+  float: left;
+}
+
+#arrow-down, #arrow-down2, #arrow-down3{
+  float: right;
+  color: #00000099;
+}
+
+#sub1, #sub2, #sub3{
+  clear: both;
+}

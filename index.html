@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="imagem/svg" href="https://skyplay.sky.com.br/o/sky-play-theme/images/logo-sky.svg" alt="SKY">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="script.js"></script>
+    <title>Assista Filmes e Séries em Qualquer Lugar | SKY Play</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-infos">
+        <div class="a-infos">
+          <a class="logo-sky-header" href=""><img src="https://skyplay.sky.com.br/o/sky-play-theme/images/logo-sky.svg" alt="SKY"></a>
+          <a class="btn-access" href="" title="Acessibilidade"><i class="fas fa-universal-access"></i></a>
+          <a class="btn-access" href="" title="Modo Noturno"><i class="fas fa-moon"></i></a>
+          <a class="btn-access" href="" title="Aumentar fonte"><i class="fas fa-plus-circle"></i></a>
+          <a class="btn-access" href="" title="Diminuir fonte"><i class="fas fa-minus-circle"></i></a>
+          <a class="btn-access" href=""><i id="btn-play" class="fas fa-play"></i>Play</a>
+        </div>
+        <div class="a-login">
+          <a class="modal-login" href=""><i class="far fa-user"></i>Entrar</a>
+          <a class="modal-search" href=""><i class="fa fa-search"></i></a>
+        </div>
+        <div class="btn-hidden">
+          <label for="btn" class="icon" onclick="openNav()"><i class="fas fa-bars"></i></label>
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+          <div class="menu-hidden">
+            <a class="menu-access" href=""><i class="fa fa-search"></i>Pesquisar</a>
+            <a class="menu-access" href=""><i class="far fa-user"></i>Entrar</a>
+            <a class="menu-access" href=""><i class="fas fa-play"></i>Play</a>
+            <a class="menu-access" href=""><i class="fas fa-universal-access"></i>Acessibilidade</a>
+            <a class="menu-access" href=""><i class="fas fa-moon"></i>Modo Noturno</a>
+            <a class="menu-access" href=""><i class="fas fa-plus-circle"></i>Aumentar fonte</a>
+            <a class="menu-access" href=""><i class="fas fa-minus-circle"></i>Diminuir fonte</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-options">
+        <a class="btn-option" href="">Filmes</a>
+        <a class="btn-option" href="">Séries</a>
+        <a class="btn-option" href="">Canais</a>
+      </div>
+      
+    </header>
+    <section>
+      <div id="box-container-carousel">
+        <div id="carouselWithIndicators" class="carousel slide" data-ride="carousel">
+          <ol id="carouselIndicators" class="carousel-indicators"></ol>
+          <div id="container-caroussel" class="carousel-inner"></div>
+          <a class="carousel-control-prev" href="#carouselWithIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselWithIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div id="images-body-container">
+        <p>
+          Filmes e séries
+        </p>
+      </div>
+    </section>
+    <footer>
+      <div class="social-network">
+        <div class="logo-sky-footer">
+          <img src="https://skyplay.sky.com.br/o/sky-play-theme/images/sky-light-default.svg">
+        </div>
+        <div class="icon-social">
+          <a class="a-icon" href=""><i class="fab fa-facebook-f"></i></a>
+          <a class="a-icon" href=""><i class="fab fa-twitter"></i></a>
+          <a class="a-icon" href=""><i class="fab fa-youtube"></i></a>
+          <a class="a-icon" href=""><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="info-footer">
+        <div class="info-mobile">
+          <div class="img-sky-footer">
+            <a class="" href=""><img src="https://skyplay.sky.com.br/documents/43573853/43574080/80x80_IMG_SKY_LogoAppSKY_2.png/014dd5ba-449d-6e8a-920b-4f8c0474c94f?t=1590182277505"></a>
+          </div>
+          <div class="mobile">
+            <p>Baixe no seu celular o app Minha SKY e divirta-se.</p>
+            <a class="img-mobile" href=""><img src="https://skyplay.sky.com.br/o/sky-play-theme/images/button-apple-store-light-default.svg"></a>
+            <a class="img-mobile" href=""><img src="https://skyplay.sky.com.br/o/sky-play-theme/images/button-google-play-light-default.svg"></a>
+          </div>
+        </div>
+        <div class="infos-teste">
+         <div class="info-about display-large">
+           <a class="title-info" href="">Sobre</a>
+           <a class="menu-info" href="">Nossa história</a>
+           <a class="menu-info" href="">Imprenssa</a>
+           <a class="menu-info" href="">Prêmios conquistados</a>
+           <a class="menu-info" href="">Credenciamento</a>
+           <a class="menu-info" href="">Trabalhe com a gente</a>
+           <a class="menu-info" href="">Promoção</a>
+          </div>
+          <div class="info-about display-mobile">
+            <label onclick="alternarSeta1()" for="sub1" id="dropdown" class="title-info">Sobre<i for="sub1" id="arrow-down" class="fas fa-angle-down"></i></label>
+            <input id="sub1" type="checkbox">
+            <div class="sub-itens">
+              <a class="menu-info" href="">Nossa história</a>
+              <a class="menu-info" href="">Imprenssa</a>
+              <a class="menu-info" href="">Prêmios conquistados</a>
+              <a class="menu-info" href="">Credenciamento</a>
+              <a class="menu-info" href="">Trabalhe com a gente</a>
+              <a class="menu-info" href="">Promoção</a>
+            </div>
+          </div>
+          <div class="info-about display-large2">
+           <a class="title-info" href="">Ajuda</a>
+           <a class="menu-info" href="">Central de ajuda</a>
+           <a class="menu-info" href="">Manuais</a>
+          </div>
+          <div class="info-about display-mobile2">
+            <label onclick="alternarSeta2()" for="sub2" id="dropdown2" class="title-info">Ajuda<i for="sub2" id="arrow-down2" class="fas fa-angle-down"></i></label>
+            <input id="sub2" type="checkbox">
+            <div class="sub-itens2">
+              <a class="menu-info" href="">Central de ajuda</a>
+              <a class="menu-info" href="">Manuais</a>
+            </div>
+           </div>
+        </div>  
+        <div class="infos-teste">
+           <div class="info-about display-large3">
+             <a class="title-info" href="">Nossas responsabilidades</a>
+             <a class="menu-info" href="">Conselho aos usuários</a>
+             <a class="menu-info" href="">Pesquisa Anatel</a>
+             <a class="menu-info" href="">Relatórios de transparência</a>
+             <a class="menu-info" href="">Responsabilidade social</a>
+             <a class="menu-info" href="">Acessibilidade</a>
+          </div>
+          <div class="info-about display-mobile3">
+            <label onclick="alternarSeta3()" for="sub3" id="dropdown3" class="title-info">Nossas responsabilidades<i for="sub3" id="arrow-down3" class="fas fa-angle-down"></i></label>
+            <input id="sub3" type="checkbox">
+            <div class="sub-itens3">
+             <a class="menu-info" href="">Conselho aos usuários</a>
+             <a class="menu-info" href="">Pesquisa Anatel</a>
+             <a class="menu-info" href="">Relatórios de transparência</a>
+             <a class="menu-info" href="">Responsabilidade social</a>
+             <a class="menu-info" href="">Acessibilidade</a>
+            </div>
+           </div>
+          <div class="info-about-sky">
+           <a class="title-info" href="">SKY Empresas</a>
+          </div>
+        </div>
+      </div> 
+      <div class="footer-links">
+        <a class="menu-home" href="">Início</a>
+        <a class="menu-link" href="">Política de privacidade</a>
+        <a class="menu-link" href="">Contratos gerais</a>
+        <a class="menu-link" href="">Contratos Pré-pago</a>
+        <a class="menu-link" href="">Cancelamento</a>
+        <a class="menu-link" href="">Ouvidoria</a>
+        <a class="menu-link" href="">Consumidor.gov</a>
+      </div>
+      <div class="copyright">
+        <p>® Todos os direitos reservados 2018. Todas as marcas SKY e qualquer propriedade intelectual inserida nelas são de propriedade da SKY Internacional AG e usadas pela SKY Serviços de Banda Larga LTDA. mediante licença.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+ 
+  
